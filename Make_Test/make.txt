@@ -1,0 +1,1 @@
+export PATH="F:\0_career\0_skill_stack\Hardware\0_embedded_sys_dev\1_mcu_dev\0_mcu_stm32\Project\win-dev-tools\gcc-arm-none-eabi\bin:$PATH"

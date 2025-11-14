@@ -1,3 +1,5 @@
 STM32-V7资料盘/
 WeActStudio.MiniSTM32H723-master/
-.vscode/
+.vscode/setting copy.json
+AHRS/
+AHRS_ENAV_RTOS-dev/

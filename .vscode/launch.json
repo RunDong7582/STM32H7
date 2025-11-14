@@ -1,0 +1,51 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "stm32cubeprogrammer": "F:/0_career/0_skill_stack/Hardware/0_embedded_sys_dev/0_dev_tools/STM TOOLS/cubeprogrammer/bin",
+            // "preLaunchCommands": [
+            //     "source F:/0_career/0_skill_stack/Hardware/0_embedded_sys_dev/1_mcu_dev/0_mcu_stm32/Project/H7/.vscode/myswo.init"
+            // ],
+            // "serverpath": "F:/0_career/0_skill_stack/Hardware/0_embedded_sys_dev/0_dev_tools/STM TOOLS/STM32CubeCLT_1.19.0/STLink-gdb-server",
+            "cwd": "${workspaceRoot}",
+            "executable": "./Make_Test/build/Make_Test.elf",
+            // "name": "Debug with OpenOCD",
+            "name": "Debug with stlink",
+            // "request": "attach",    
+            "request": "launch",
+            "interface": "swd",
+            "type": "cortex-debug",
+            "servertype":"stlink",
+            "device": "STM32H723VGT6",
+            // "servertype": "openocd",
+            "configFiles": [
+                "F:/0_career/0_skill_stack/Hardware/0_embedded_sys_dev/1_mcu_dev/0_mcu_stm32/Project/win-dev-tools/Openocd/openocd/scripts/interface/stlink.cfg",
+                "F:/0_career/0_skill_stack/Hardware/0_embedded_sys_dev/1_mcu_dev/0_mcu_stm32/Project/win-dev-tools/Openocd/openocd/scripts/target/stm32h7x.cfg",
+            ],
+            "searchDir": [],
+            "runToEntryPoint": "main",
+            "v1": false,
+            "showDevDebugOutput": "raw",
+            "svdFile": "F:/0_career/0_skill_stack/Hardware/0_embedded_sys_dev/1_mcu_dev/0_mcu_stm32/Project/H7/STM32H723.svd",
+            "swoConfig": {
+                "enabled": true,
+                "cpuFrequency": 550000000,
+                "swoFrequency":   2000000,
+                "source": "probe",
+                // "swoEncoding": "uart",
+                "decoders": [
+                    {
+                        "label": "ITM port 0 output",
+                        "type": "console",
+                        "port": 0,
+                        // "showOnStartup": true,
+                        // "encoding": "ascii"
+                    }
+                ]
+            }
+        }
+    ] 
+}

@@ -1,0 +1,5 @@
+{
+    "cortex-debug.gdbPath": "F:/0_career/0_skill_stack/Hardware/0_embedded_sys_dev/1_mcu_dev/0_mcu_stm32/Project/win-dev-tools/gcc-arm-none-eabi/bin/arm-none-eabi-gdb.exe",
+    "cortex-debug.openocdPath:": "F:/0_career/0_skill_stack/Hardware/0_embedded_sys_dev/1_mcu_dev/0_mcu_stm32/Project/win-dev-tools/Openocd/bin/openocd",
+    "cortex-debug.stlinkPath:": "F:/0_career/0_skill_stack/Hardware/0_embedded_sys_dev/0_dev_tools/STM TOOLS/STM32CubeCLT_1.19.0/STLink-gdb-server/bin"
+}
